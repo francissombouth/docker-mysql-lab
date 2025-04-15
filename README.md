@@ -12,14 +12,13 @@ MYSQL_ROOT_PASSWORD=pwd
 MYSQL_DATABASE=formation
 
 ### 2. Construction de l'image
-### 2. Construction de l'image
-### 2. Construction de l'image
 
 ```bash
 docker build -t mysql-lab .
 ```
 
 ### 3. Construction de l'image
+
 ```bash
 docker run -d --name mysql-container \
   --env-file .env \
@@ -39,6 +38,7 @@ USE formation;
 ```
 
 ### 5.Arrêt et nettoyage
+
 Pour arrêter le conteneur:
 ```bash
 docker stop mysql-container
